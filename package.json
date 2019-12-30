@@ -24,11 +24,15 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "prop-types": "^15.7.2",
     "react": "16.2",
-    "react-dom": "16.2"
+    "react-dom": "16.2",
+    "react-icons": "^3.8.0"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",

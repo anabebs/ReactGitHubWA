@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './components/index.css';
+import Popular from './components/Popular';
 
-import '../assets/stylesheets/application.scss';
 
-const Hello = ({ name }) => {
-  return (
-    <div>
-      Hello,
-      {name}
-    </div>
-  );
-};
-
-const root = document.getElementById('root');
-if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+class App extends React.Component {
+  render() {
+    return (
+      <div className='container'>
+        <Popular />
+      </div>
+    )
+  }
 }
+
+ReactDOM.render(
+  <App />, root ,
+  document.getElementById('app')
+)
